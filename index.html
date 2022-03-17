@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    
+    <title>Turn2Us</title>
+  </head>
+  <body>
+
+    <!-- Form section -->
+    <div class="container">
+      <h3 class="header"> Eligibility checker </h3>
+      <p>To apply for benefits you must meet the age criteria. To check your eligibility please use the checker.</p>
+      <form action="">
+        <label for="dob">Please enter your date of birth:</label><br><br>
+        <input
+          type="text"
+          id="dob"
+          name="dob"
+          placeholder="dd/mm/yyyy"
+          onblur="validateDob()"
+          required="required"
+        />
+        <p id="validate"></p><br><br>
+        
+        <button id="submit"onclick="validateDob()">Submit</button>
+      </form>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
